@@ -1,4 +1,5 @@
 import 'package:feature_first/core/routes/routes_error_page.dart';
+import 'package:feature_first/features/bottom_navigation/bottom_navigation.dart';
 import 'package:feature_first/features/home/presentation/home_screen.dart';
 import 'package:feature_first/features/statistic/statistic_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -8,7 +9,7 @@ class AppRoutes{
 
   static GoRouter routes = GoRouter(
       debugLogDiagnostics: true,
-      initialLocation: StatisticScreen.path,
+      initialLocation: BottomNavigation.path,
       errorBuilder: (BuildContext context, GoRouterState state) =>
           RouteErrorPage(state: state),
       redirect: (BuildContext context, GoRouterState state){
@@ -16,18 +17,18 @@ class AppRoutes{
       },
       routes: [
 
-        //Splash Screen Route And Initial route
-        // GoRoute(
-        //   path: SplashScreen.path,
-        //   pageBuilder: (context, state) {
-        //     return CustomTransitionPage<void>(
-        //         key: state.pageKey,
-        //         child: const SplashScreen(),
-        //         transitionsBuilder: (context, animation, secondaryAnimation, child) =>
-        //             CupertinoPageTransition(primaryRouteAnimation: animation, secondaryRouteAnimation: secondaryAnimation, linearTransition: true, child: child)
-        //     );
-        //   },
-        // ),
+        //Bottom Navigation Screen Route And Initial route
+        GoRoute(
+          path: BottomNavigation.path,
+          pageBuilder: (context, state) {
+            return CustomTransitionPage<void>(
+                key: state.pageKey,
+                child: const BottomNavigation(),
+                transitionsBuilder: (context, animation, secondaryAnimation, child) =>
+                    CupertinoPageTransition(primaryRouteAnimation: animation, secondaryRouteAnimation: secondaryAnimation, linearTransition: true, child: child)
+            );
+          },
+        ),
 
 
         //Home Screen Route

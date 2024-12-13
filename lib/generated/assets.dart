@@ -6,6 +6,7 @@ class Assets {
   static const String iconsBack = 'assets/icons/back.png';
   static const String iconsFlutter = 'assets/icons/flutter.png';
   static const String iconsGrocery = 'assets/icons/grocery.png';
+  static const String iconsHome = 'assets/icons/home.png';
   static const String iconsLoan = 'assets/icons/loan.png';
   static const String iconsNetwork = 'assets/icons/network.png';
   static const String iconsNotification = 'assets/icons/notification.png';
@@ -13,9 +14,12 @@ class Assets {
   static const String iconsSearch = 'assets/icons/search.png';
   static const String iconsSensor = 'assets/icons/sensor.png';
   static const String iconsSent = 'assets/icons/sent.png';
+  static const String iconsSettings = 'assets/icons/settings.png';
   static const String iconsSpotify = 'assets/icons/spotify.png';
+  static const String iconsStatistic = 'assets/icons/statistic.png';
   static const String iconsTopup = 'assets/icons/topup.png';
   static const String iconsTransition = 'assets/icons/transition.png';
+  static const String iconsWallet = 'assets/icons/wallet.png';
   static const String imagesFlutter = 'assets/images/flutter.png';
   static const String imagesProfile = 'assets/images/profile.png';
   static const String imagesWorldmap = 'assets/images/worldmap.png';
