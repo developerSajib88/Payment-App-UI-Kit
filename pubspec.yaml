@@ -65,9 +65,11 @@ dependencies:
   # Internet connection checking
   internet_connection_checker: ^1.0.0+1
 
-
   # Font Awesome Icons
   font_awesome_flutter: ^10.8.0
+
+  # Chart
+  fl_chart: ^0.69.2
 
 
   # OTP form fields

@@ -3,10 +3,12 @@ class Assets {
   Assets._();
 
   static const String iconsApple = 'assets/icons/apple.png';
+  static const String iconsBack = 'assets/icons/back.png';
   static const String iconsFlutter = 'assets/icons/flutter.png';
   static const String iconsGrocery = 'assets/icons/grocery.png';
   static const String iconsLoan = 'assets/icons/loan.png';
   static const String iconsNetwork = 'assets/icons/network.png';
+  static const String iconsNotification = 'assets/icons/notification.png';
   static const String iconsReceive = 'assets/icons/receive.png';
   static const String iconsSearch = 'assets/icons/search.png';
   static const String iconsSensor = 'assets/icons/sensor.png';
