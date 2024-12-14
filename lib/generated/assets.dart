@@ -19,9 +19,11 @@ class Assets {
   static const String iconsStatistic = 'assets/icons/statistic.png';
   static const String iconsTopup = 'assets/icons/topup.png';
   static const String iconsTransition = 'assets/icons/transition.png';
+  static const String iconsVisaSensor = 'assets/icons/visa_sensor.png';
   static const String iconsWallet = 'assets/icons/wallet.png';
   static const String imagesFlutter = 'assets/images/flutter.png';
   static const String imagesProfile = 'assets/images/profile.png';
+  static const String imagesVisa = 'assets/images/visa.png';
   static const String imagesWorldmap = 'assets/images/worldmap.png';
 
 }
