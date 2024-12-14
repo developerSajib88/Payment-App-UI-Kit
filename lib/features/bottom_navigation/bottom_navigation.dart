@@ -1,5 +1,5 @@
-import 'package:feature_first/app/app.dart';
 import 'package:feature_first/features/home/presentation/home_screen.dart';
+import 'package:feature_first/features/my_cards/presentation/my_cards.dart';
 import 'package:feature_first/features/statistic/statistic_screen.dart';
 import 'package:feature_first/generated/assets.dart';
 import 'package:feature_first/utils/styles/color_palates.dart';
@@ -7,7 +7,6 @@ import 'package:feature_first/utils/styles/custom_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class BottomNavigation extends HookWidget {
   static String get path => "/bottomNavigation";
@@ -20,7 +19,7 @@ class BottomNavigation extends HookWidget {
     final navigationIndex = useState<int>(0);
     final screens = useState<List<Widget>>([
       const HomeScreen(),
-      const StatisticScreen(),
+      const MyCardsScreen(),
       const StatisticScreen(),
       const StatisticScreen(),
     ]);
