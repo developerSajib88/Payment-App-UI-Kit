@@ -1,5 +1,5 @@
 import 'package:feature_first/features/home/presentation/home_screen.dart';
-import 'package:feature_first/features/my_cards/presentation/my_cards.dart';
+import 'package:feature_first/features/my_cards/presentation/my_cards_screen.dart';
 import 'package:feature_first/features/statistic/statistic_screen.dart';
 import 'package:feature_first/generated/assets.dart';
 import 'package:feature_first/utils/styles/color_palates.dart';

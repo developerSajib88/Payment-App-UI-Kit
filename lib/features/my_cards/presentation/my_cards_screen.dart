@@ -1,5 +1,7 @@
 import 'package:feature_first/common/global/functions/global_functions.dart';
 import 'package:feature_first/common/widgets/app_bar/button_app_bar.dart';
+import 'package:feature_first/common/widgets/buttons/widget_bounce.dart';
+import 'package:feature_first/features/my_cards/presentation/add_new_cards_screen.dart';
 import 'package:feature_first/generated/assets.dart';
 import 'package:feature_first/utils/constants/ui_constants.dart';
 import 'package:feature_first/utils/styles/color_palates.dart';
@@ -279,26 +281,29 @@ class MyCardsScreen extends StatelessWidget {
 
             const Spacer(),
 
-            Container(
-              width: 1.sw,
-              height: 25.h,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: ColorPalates.primaryColor,
-                borderRadius: radius8
-              ),
-              child: Row(
-                mainAxisAlignment: mainCenter,
-                children: [
-                  Text(
-                    "Add Card",
-                    style: CustomTextStyles.primary.copyWith(color: Colors.white),
-                  ),
+            WidgetBounce(
+              onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context)=> const AddNewCardsScreen())),
+              child: Container(
+                width: 1.sw,
+                height: 25.h,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: ColorPalates.primaryColor,
+                  borderRadius: radius8
+                ),
+                child: Row(
+                  mainAxisAlignment: mainCenter,
+                  children: [
+                    Text(
+                      "Add Card",
+                      style: CustomTextStyles.primary.copyWith(color: Colors.white),
+                    ),
 
-                  gap2,
+                    gap2,
 
-                  const Icon(Icons.add,color: Colors.white,)
-                ],
+                    const Icon(Icons.add,color: Colors.white,)
+                  ],
+                ),
               ),
             ),
 
