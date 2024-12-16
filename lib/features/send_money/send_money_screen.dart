@@ -317,7 +317,71 @@ class SendMoneyScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+
+            gap12,
+
+            Container(
+              width: 1.sw,
+              height: 65.h,
+              padding: padding12,
+              decoration: BoxDecoration(
+                borderRadius: radius6,
+                color: ColorPalates.lightBackground
+              ),
+              child: Column(
+                crossAxisAlignment: crossStart,
+                mainAxisAlignment: mainCenter,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Enter Your Amount",
+                        style:
+                            CustomTextStyles.secondary.copyWith(fontSize: 7.sp),
+                      ),
+                      Text(
+                        "Change Currency?",
+                        style: CustomTextStyles.secondary.copyWith(
+                            fontSize: 7.sp, color: const Color(0xffFF3F60)),
+                      ),
+                    ],
+                  ),
+
+                  gap8,
+
+                  RichText(
+                    text: TextSpan(
+                      text: "USD  ",
+                      style: CustomTextStyles.primaryBold.copyWith(color: Colors.grey,fontSize: 10.sp),
+                      children: [
+                        TextSpan(
+                          text: "36.00",
+                          style: CustomTextStyles.primaryBold.copyWith(fontSize: 10.sp)
+                        )
+                      ]
+                    ),
+                  )
+
+                ],
+              ),
+            ),
+
+            const Spacer(),
+
+            Container(
+              width: 1.sw,
+              height: 25.h,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: ColorPalates.primaryColor,
+                borderRadius: radius8
+              ),
+              child: Text("Send Money",style: CustomTextStyles.primaryBold,),
+            ),
+
+            gap10,
 
 
           ],
