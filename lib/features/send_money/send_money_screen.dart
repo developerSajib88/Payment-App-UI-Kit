@@ -1,5 +1,4 @@
 
-import 'package:feature_first/common/global/functions/global_functions.dart';
 import 'package:feature_first/common/widgets/app_bar/button_app_bar.dart';
 import 'package:feature_first/generated/assets.dart';
 import 'package:feature_first/utils/constants/ui_constants.dart';
@@ -21,187 +20,251 @@ class SendMoneyScreen extends StatelessWidget {
         padding: padding6,
         child: Column(
           children: [
-            ButtonAppBar(title: "Send Money"),
+            const ButtonAppBar(title: "Send Money"),
 
             gap12,
 
-            Stack(
-              children: [
-                Container(
-                  width: 1.sw,
-                  height: 100.h,
-                  padding: padding6,
-                  decoration: BoxDecoration(
-                      color: ColorPalates.lightBackground,
-                      borderRadius: radius12
-                  ),
-                  child: Stack(
-                    children: [
-
-                      Image.asset(
-                        Assets.imagesWorldmap,
-                      ),
+            Container(
+              width: 1.sw,
+              height: 80.h,
+              padding: padding8,
+              decoration: BoxDecoration(
+                  color: ColorPalates.lightBackground,
+                  borderRadius: radius12
+              ),
+              child: Row(
+                crossAxisAlignment: crossCenter,
+                mainAxisAlignment: mainSpaceBetween,
+                children: <Widget>[
 
 
-                    ],
-                  ),
-                ),
-
-
-                Container(
-                  width: 1.sw,
-                  height: 100.h,
-                  padding: padding6,
-                  margin: padding6,
-                  decoration: BoxDecoration(
-                    borderRadius: radius12,
-                  ),
-                  child: Column(
+                  Column(
                     crossAxisAlignment: crossStart,
                     children: [
-                      Row(
-                        mainAxisAlignment: mainSpaceBetween,
-                        children: [
+                      Text("Category Chart",style: CustomTextStyles.primary,),
 
-                          Image.asset(
-                            Assets.iconsSensor,
-                            width: 15.w,
-                            height: 12.h,
-                          ),
-
-                          Image.asset(
-                            Assets.iconsNetwork,
-                            width: 15.w,
-                            height: 12.h,
-                            color: ColorPalates.defaultGrey.withOpacity(0.5),
-                          ),
-
-                        ],
-                      ),
-
-                      gap12,
-
-                      Text(
-                        GlobalFunctions.formatNumber("4562112245957852"),
-                        style: CustomTextStyles.primary.copyWith(fontSize: 12.sp),
-                      ),
-
-                      gap4,
-
-                      Text(
-                        "Aimal Naseem",
-                        style: CustomTextStyles.primary,
-                      ),
-
-                      gap4,
-
+                      gap6,
 
                       Row(
-                        crossAxisAlignment: crossCenter,
                         children: [
-
                           Column(
                             crossAxisAlignment: crossStart,
                             children: [
-                              Text(
-                                "Expire Date",
-                                style: CustomTextStyles.secondary,
-                              ),
-
-                              Text(
-                                "24/2000",
-                                style: CustomTextStyles.primary,
-                              ),
-
-                            ],
-                          ),
-
-                          gap12,
-
-                          Column(
-                            crossAxisAlignment: crossStart,
-                            children: [
-                              Text(
-                                "CVV",
-                                style: CustomTextStyles.secondary,
-                              ),
-
-                              Text(
-                                "6986",
-                                style: CustomTextStyles.primary,
-                              ),
-
-                            ],
-                          ),
-
-                          const Spacer(),
-
-
-                          Column(
-                            crossAxisAlignment: crossCenter,
-                            children: [
-                              Stack(
-                                alignment: Alignment.centerRight,
-                                clipBehavior: Clip.none,
+                              Row(
                                 children: [
-                                  CircleAvatar(
-                                    radius: 6.r,
-                                    backgroundColor: const Color(0xffEA001B),
+                                  Container(
+                                    width: 7.w,
+                                    height: 7.w,
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xffFFCA63),
+                                      borderRadius: BorderRadius.circular(2.r)
+                                    ),
                                   ),
 
-                                  Positioned(
-                                    right: -15,
-                                    child: CircleAvatar(
-                                      radius: 6.r,
-                                      backgroundColor: const Color(0xffF79F1A),
+                                  gap4,
+
+                                  Text(
+                                    "Transaction",
+                                    style: CustomTextStyles.secondary.copyWith(
+                                      color: Colors.white,
+                                      fontSize: 6.w
                                     ),
                                   )
                                 ],
                               ),
 
-                              gap4,
+                              gap6,
 
-                              Text(
-                                "Mastercard",
-                                style: CustomTextStyles.primary,
-                              )
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 7.w,
+                                    height: 7.w,
+                                    decoration: BoxDecoration(
+                                        color: const Color(0xff47DDC2),
+                                        borderRadius: BorderRadius.circular(2.r)
+                                    ),
+                                  ),
+
+                                  gap4,
+
+                                  Text(
+                                    "Transfer",
+                                    style: CustomTextStyles.secondary.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 6.w
+                                    ),
+                                  )
+                                ],
+                              ),
+
+                              gap6,
+
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 7.w,
+                                    height: 7.w,
+                                    decoration: BoxDecoration(
+                                        color: const Color(0xffC172FF),
+                                        borderRadius: BorderRadius.circular(2.r)
+                                    ),
+                                  ),
+
+                                  gap4,
+
+                                  Text(
+                                    "Travel",
+                                    style: CustomTextStyles.secondary.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 6.w
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+
+                          gap6,
+
+                          Column(
+                            crossAxisAlignment: crossStart,
+                            children: [
+
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 7.w,
+                                    height: 7.w,
+                                    decoration: BoxDecoration(
+                                        color: const Color(0xff47DDC2),
+                                        borderRadius: BorderRadius.circular(2.r)
+                                    ),
+                                  ),
+
+                                  gap4,
+
+                                  Text(
+                                    "Shopping",
+                                    style: CustomTextStyles.secondary.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 6.w
+                                    ),
+                                  )
+                                ],
+                              ),
+
+                              gap6,
+
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 7.w,
+                                    height: 7.w,
+                                    decoration: BoxDecoration(
+                                        color: const Color(0xffFFCA63),
+                                        borderRadius: BorderRadius.circular(2.r)
+                                    ),
+                                  ),
+
+                                  gap4,
+
+                                  Text(
+                                    "Food",
+                                    style: CustomTextStyles.secondary.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 6.w
+                                    ),
+                                  )
+                                ],
+                              ),
+
+                              gap6,
+
+
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 7.w,
+                                    height: 7.w,
+                                    decoration: BoxDecoration(
+                                        color: const Color(0xffC172FF),
+                                        borderRadius: BorderRadius.circular(2.r)
+                                    ),
+                                  ),
+
+                                  gap4,
+
+                                  Text(
+                                    "Car",
+                                    style: CustomTextStyles.secondary.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 6.w
+                                    ),
+                                  )
+                                ],
+                              ),
+
 
                             ],
-                          )
-
+                          ),
 
                         ],
-                      )
+                      ),
+
 
 
                     ],
                   ),
-                ),
 
 
-                Container(
-                  width: 1.sw,
-                  height: 100.h,
-                  padding: padding6,
-                  decoration: BoxDecoration(
-                      borderRadius: radius12,
-                      gradient: LinearGradient(
-                          begin: Alignment.bottomLeft,
-                          end: Alignment.topRight,
-                          colors: [
-                            Colors.transparent,
-                            ColorPalates.primaryColor.withOpacity(0.07),
-                            ColorPalates.primaryColor.withOpacity(0.1),
-                          ]
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      SizedBox(
+                        width: 55.w,
+                        height: 55.w,
+                        child: CustomPaint(
+                          painter: SegmentedCircularPainter(
+                            values: [40, 20, 20, 20], // Values to represent percentages.
+                            colors: [
+                              const Color(0xffFF6393),
+                              const Color(0xff47DDC2),
+                              const Color(0xffC172FF),
+                            ], // Colors for each slice.
+                          ),
+                        ),
+                      ),
+
+                      Column(
+                        crossAxisAlignment: crossCenter,
+                        mainAxisAlignment: mainCenter,
+                        children: [
+                          Text(
+                            "55%",
+                            style: CustomTextStyles.primaryBold.copyWith(
+                              fontWeight: FontWeight.w800,
+                              fontSize: 10.sp
+                            ),
+                          ),
+
+                          Text(
+                            "Transition",
+                            style: CustomTextStyles.secondary.copyWith(
+                              fontSize: 7.sp
+                            ),
+                          )
+                        ],
                       )
+                    ],
                   ),
-                ),
 
 
-
-              ],
+                ],
+              ),
             ),
 
+            gap12,
 
             Container(
               width: 1.sw,
@@ -389,4 +452,55 @@ class SendMoneyScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+
+
+class SegmentedCircularPainter extends CustomPainter {
+  final List<double> values;
+  final List<Color> colors;
+  final double strokeWidth;
+  final double gapSize;
+
+  SegmentedCircularPainter({
+    required this.values,
+    required this.colors,
+    this.strokeWidth = 10,
+    this.gapSize = 20,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final double total = values.reduce((a, b) => a + b);
+    final double radius = size.width / 2;
+
+    double startAngle = -90.0; // Start at the top.
+
+    final Rect rect = Rect.fromCircle(center: Offset(size.width / 2, size.height / 2), radius: radius);
+
+    for (int i = 0; i < values.length; i++) {
+      final sweepAngle = (values[i] / total) * 360.0 - gapSize; // Account for gaps between segments.
+
+      final Paint paint = Paint()
+        ..color = colors[i % colors.length]
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = strokeWidth
+        ..strokeCap = StrokeCap.round; // Rounded edges for a smoother look.
+
+      canvas.drawArc(
+        rect,
+        radians(startAngle),
+        radians(sweepAngle),
+        false, // False for a stroked arc.
+        paint,
+      );
+
+      startAngle += sweepAngle + gapSize; // Adjust for the gap size.
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+
+  double radians(double degrees) => degrees * (3.141592653589793 / 180.0); // Convert degrees to radians.
 }
